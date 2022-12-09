@@ -1,0 +1,130 @@
+# : kivy 2.1.0
+
+<Touch>:
+    orientation: 'vertical'
+
+    AnchorLayout:
+        anchor_y: 'top'
+        size_hint_y: .20
+
+        Label:
+            id: 'operation'
+            font_size: 40
+            text: "operation"
+            text_size: self.size
+            halign: 'right'
+            padding_x: 20
+
+    AnchorLayout:
+        anchor_y: 'center'
+        size_hint_y: .10
+
+        Label:
+            id: 'resultat'
+            text: "resultat"
+            text_size: self.size
+            halign: 'right'
+            padding_x: 20
+
+    BoxLayout:
+        orientation: 'vertical'
+
+        GridLayout:
+            cols: 4
+            Button:
+                id: 'delet_all'
+                text: "C"
+                background_color: 0, 0, 0, 0
+            Button:
+                id: 'for_hundred'
+                text: "%"
+                background_color: 0, 0, 0, 0
+            Button:
+                id: 'delet'
+                text: "Del"
+                background_color: 0, 0, 0, 0
+            Button:
+                id: 'division'
+                text: "/"
+                color: '#00FFFF'
+                background_color: 0, 0, 0, 0
+
+        GridLayout:
+            cols: 4
+            Button:
+                id: 'seven'
+                text: "7"
+                background_color: 0, 0, 0, 0
+            Button:
+                id: 'eight'
+                text: "8"
+                background_color: 0, 0, 0, 0
+            Button:
+                id: 'nine'
+                text: "9"
+                background_color: 0, 0, 0, 0
+            Button:
+                id: 'multiple'
+                text: "X"
+                color: '#00FFFF'
+                background_color: 0, 0, 0, 0
+
+        GridLayout:
+            cols: 4
+            Button:
+                id: 'four'
+                text: "4"
+                background_color: 0, 0, 0, 0
+            Button:
+                id: 'five'
+                text: "5"
+                background_color: 0, 0, 0, 0
+            Button:
+                id: 'six'
+                text: "6"
+                background_color: 0, 0, 0, 0
+            Button:
+                id: 'less'
+                text: "-"
+                color: '#00FFFF'
+                background_color: 0, 0, 0, 0
+
+        GridLayout:
+            cols: 4
+            Button:
+                id: 'one'
+                text: "1"
+                background_color: 0, 0, 0, 0
+            Button:
+                id: 'tow'
+                text: "2"
+                background_color: 0, 0, 0, 0
+            Button:
+                id: 'tree'
+                text: "3"
+                background_color: 0, 0, 0, 0
+            Button:
+                id: 'plus'
+                text: "+"
+                color: '#00FFFF'
+                background_color: 0, 0, 0, 0
+
+        GridLayout:
+            cols: 4
+            Button:
+                id: 'double_zero'
+                text: "00"
+                background_color: 0, 0, 0, 0
+            Button:
+                id: 'zero'
+                text: "0"
+                background_color: 0, 0, 0, 0
+            Button:
+                id: 'coma'
+                text: ","
+                background_color: 0, 0, 0, 0
+            Button:
+                id: 'egal'
+                text: "="
+                color: '#00FFFF'
+                background_color: 0, 0, 0, 0
