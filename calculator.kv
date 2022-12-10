@@ -10,7 +10,7 @@
         Label:
             id: 'operation'
             font_size: 40
-            text: root.operation
+            text: app.operation
             text_size: self.size
             halign: 'right'
             padding_x: 20
@@ -21,7 +21,7 @@
 
         Label:
             id: 'resultat'
-            text: root.resultat
+            text: app.resultat
             text_size: self.size
             halign: 'right'
             padding_x: 20
@@ -35,112 +35,112 @@
             Button:
                 text: "C"
                 background_color: 0, 0, 0, 0
-                on_press: app.on_click_button(self)
+                on_press: app.delete_all(self)
             Button:
                 text: "%"
                 background_color: 0, 0, 0, 0
-                on_press: app.on_click_button(self)
+                on_press: app.on_click_buttonon_click_numeric_button(self)
             Button:
                 text: "Del"
                 background_color: 0, 0, 0, 0
-                on_press: app.on_click_button(self)
+                on_press: app.delete(self)
             Button:
                 text: "/"
                 color: '#00FFFF'
                 background_color: 0, 0, 0, 0
-                on_press: app.on_click_button(self)
+                on_press: app.on_click_buttonon_click_numeric_button(self)
 
         GridLayout:
             cols: 4
             Button:
-                id: 'seven'
+                id: seven
                 text: "7"
                 background_color: 0, 0, 0, 0
-                on_press: app.on_click_button(self)
+                on_press: app.on_click_buttonon_click_numeric_button(self)
             Button:
                 id: 'eight'
                 text: "8"
                 background_color: 0, 0, 0, 0
-                on_press: app.on_click_button(self)
+                on_press: app.on_click_buttonon_click_numeric_button(self)
             Button:
-                id: 'nine'
+                id: nine
                 text: "9"
                 background_color: 0, 0, 0, 0
-                on_press: app.on_click_button(self)
+                on_press: app.on_click_buttonon_click_numeric_button(self)
             Button:
-                id: 'multiple'
-                text: "X"
+                id: multiple
+                text: "*"
                 color: '#00FFFF'
                 background_color: 0, 0, 0, 0
-                on_press: app.on_click_button(self)
+                on_press: app.on_click_buttonon_click_numeric_button(self)
 
         GridLayout:
             cols: 4
             Button:
-                id: 'four'
+                id: four
                 text: "4"
                 background_color: 0, 0, 0, 0
-                on_press: app.on_click_button(self)
+                on_press: app.on_click_buttonon_click_numeric_button(self)
             Button:
                 id: 'five'
                 text: "5"
                 background_color: 0, 0, 0, 0
-                on_press: app.on_click_button(self)
+                on_press: app.on_click_buttonon_click_numeric_button(self)
             Button:
-                id: 'six'
+                id: six
                 text: "6"
                 background_color: 0, 0, 0, 0
-                on_press: app.on_click_button(self)
+                on_press: app.on_click_buttonon_click_numeric_button(self)
             Button:
-                id: 'less'
+                id: less
                 text: "-"
                 color: '#00FFFF'
                 background_color: 0, 0, 0, 0
-                on_press: app.on_click_button(self)
+                on_press: app.on_click_buttonon_click_numeric_button(self)
 
         GridLayout:
             cols: 4
             Button:
-                id: 'one'
+                id: one
                 text: "1"
                 background_color: 0, 0, 0, 0
-                on_press: app.on_click_button(self)
+                on_press: app.on_click_buttonon_click_numeric_button(self)
             Button:
-                id: 'tow'
+                id: tow
                 text: "2"
                 background_color: 0, 0, 0, 0
-                on_press: app.on_click_button(self)
+                on_press: app.on_click_buttonon_click_numeric_button(self)
             Button:
-                id: 'tree'
+                id: tree
                 text: "3"
                 background_color: 0, 0, 0, 0
-                on_press: app.on_click_button(self)
+                on_press: app.on_click_buttonon_click_numeric_button(self)
             Button:
-                id: 'plus'
+                id: plus
                 text: "+"
                 color: '#00FFFF'
                 background_color: 0, 0, 0, 0
-                on_press: app.on_click_button(self)
+                on_press: app.on_click_buttonon_click_numeric_button(self)
 
         GridLayout:
             cols: 4
             Button:
-                id: 'double_zero'
+                id: double_zero
                 text: "00"
                 background_color: 0, 0, 0, 0
-                on_press: app.on_click_button(self)
+                on_press: app.on_click_buttonon_click_numeric_button(self,)
             Button:
-                id: 'zero'
+                id: zero
                 text: "0"
                 background_color: 0, 0, 0, 0
-                on_press: app.on_click_button(self)
+                on_press: app.on_click_buttonon_click_numeric_button(self)
             Button:
-                id: 'coma'
-                text: ","
+                id: coma
+                text: "."
                 background_color: 0, 0, 0, 0
-                on_press: app.on_click_button(self)
+                on_press: app.on_click_buttonon_click_numeric_button(self)
             Button:
-                id: 'egal'
+                id: egal
                 text: "="
                 color: '#00FFFF'
                 background_color: 0, 0, 0, 0
