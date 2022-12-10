@@ -1,6 +1,6 @@
 # : kivy 2.1.0
 
-<Touch>:
+<MainScreen>:
     orientation: 'vertical'
 
     AnchorLayout:
@@ -10,7 +10,7 @@
         Label:
             id: 'operation'
             font_size: 40
-            text: "operation"
+            text: root.operation
             text_size: self.size
             halign: 'right'
             padding_x: 20
@@ -21,7 +21,7 @@
 
         Label:
             id: 'resultat'
-            text: "resultat"
+            text: root.resultat
             text_size: self.size
             halign: 'right'
             padding_x: 20
@@ -31,23 +31,24 @@
 
         GridLayout:
             cols: 4
+
             Button:
-                id: 'delet_all'
                 text: "C"
                 background_color: 0, 0, 0, 0
+                on_press: app.on_click_button(self)
             Button:
-                id: 'for_hundred'
                 text: "%"
                 background_color: 0, 0, 0, 0
+                on_press: app.on_click_button(self)
             Button:
-                id: 'delet'
                 text: "Del"
                 background_color: 0, 0, 0, 0
+                on_press: app.on_click_button(self)
             Button:
-                id: 'division'
                 text: "/"
                 color: '#00FFFF'
                 background_color: 0, 0, 0, 0
+                on_press: app.on_click_button(self)
 
         GridLayout:
             cols: 4
@@ -55,19 +56,23 @@
                 id: 'seven'
                 text: "7"
                 background_color: 0, 0, 0, 0
+                on_press: app.on_click_button(self)
             Button:
                 id: 'eight'
                 text: "8"
                 background_color: 0, 0, 0, 0
+                on_press: app.on_click_button(self)
             Button:
                 id: 'nine'
                 text: "9"
                 background_color: 0, 0, 0, 0
+                on_press: app.on_click_button(self)
             Button:
                 id: 'multiple'
                 text: "X"
                 color: '#00FFFF'
                 background_color: 0, 0, 0, 0
+                on_press: app.on_click_button(self)
 
         GridLayout:
             cols: 4
@@ -75,19 +80,23 @@
                 id: 'four'
                 text: "4"
                 background_color: 0, 0, 0, 0
+                on_press: app.on_click_button(self)
             Button:
                 id: 'five'
                 text: "5"
                 background_color: 0, 0, 0, 0
+                on_press: app.on_click_button(self)
             Button:
                 id: 'six'
                 text: "6"
                 background_color: 0, 0, 0, 0
+                on_press: app.on_click_button(self)
             Button:
                 id: 'less'
                 text: "-"
                 color: '#00FFFF'
                 background_color: 0, 0, 0, 0
+                on_press: app.on_click_button(self)
 
         GridLayout:
             cols: 4
@@ -95,19 +104,23 @@
                 id: 'one'
                 text: "1"
                 background_color: 0, 0, 0, 0
+                on_press: app.on_click_button(self)
             Button:
                 id: 'tow'
                 text: "2"
                 background_color: 0, 0, 0, 0
+                on_press: app.on_click_button(self)
             Button:
                 id: 'tree'
                 text: "3"
                 background_color: 0, 0, 0, 0
+                on_press: app.on_click_button(self)
             Button:
                 id: 'plus'
                 text: "+"
                 color: '#00FFFF'
                 background_color: 0, 0, 0, 0
+                on_press: app.on_click_button(self)
 
         GridLayout:
             cols: 4
@@ -115,16 +128,20 @@
                 id: 'double_zero'
                 text: "00"
                 background_color: 0, 0, 0, 0
+                on_press: app.on_click_button(self)
             Button:
                 id: 'zero'
                 text: "0"
                 background_color: 0, 0, 0, 0
+                on_press: app.on_click_button(self)
             Button:
                 id: 'coma'
                 text: ","
                 background_color: 0, 0, 0, 0
+                on_press: app.on_click_button(self)
             Button:
                 id: 'egal'
                 text: "="
                 color: '#00FFFF'
                 background_color: 0, 0, 0, 0
+                on_press: app.calculate(self)
